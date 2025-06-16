@@ -1,0 +1,94 @@
+[class$='alpha-banner'] {
+  right: auto;
+  left: 50%;
+  translate: -50% 0;
+  top: auto;
+  bottom: 1.5rem;
+  max-width: 600px;
+  font-size: 0.875em;
+  border-radius: 10px;
+}
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.minimap-container {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 320px;
+  height: 320px;
+  z-index: 1000;
+}
+
+.minimap {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.minimap-search-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  z-index: 1001;
+  display: flex;
+  gap: 8px;
+  background: white;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.minimap-search-input {
+  flex: 1;
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.minimap-search-input:focus {
+  outline: none;
+  border-color: #4285f4;
+  box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
+}
+
+.minimap-search-button {
+  padding: 8px 16px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.minimap-search-button:hover {
+  background-color: #3367d6;
+}
+
+.minimap-search-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Style for the view center marker */
+.view-center-marker .circle {
+  width: 12px;
+  height: 12px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
